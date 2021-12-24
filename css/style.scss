@@ -117,8 +117,9 @@ $text-clr:#3a3a3a;
 }
 
 body{
+    // overflow-y: hidden;
     display: flex;
-    height: auto;
+    height: 100vh;
     flex-direction: column;
     align-items: center;
     color:#fff;
@@ -128,11 +129,11 @@ body{
         width: 100%;
         background-color: #000;
         display: flex;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
     }
 }
-
 
 .navbar {
     width: 90%;
@@ -154,9 +155,32 @@ body{
     color: $primray-color!important;
 }
 .hero {
-    background-color: $herobg;
+    background: linear-gradient(
+292deg, #fff0,#110d17),url(../imgs/banner.jpg) no-repeat;
     height: 100vh;
     width: 100%;
+    background-size: cover;
+    .hero-title{
+        font-size: 4rem;
+    }
+    p{
+        font-size: 1.8rem;
+    }
+    .register{
+        width: 2rem;
+        display: flex;
+        button {
+            width:22rem;
+            height: 3.5rem;
+            border-radius: .3rem;
+            background: linear-gradient(
+                -292deg, #9838a58f, #9d78d54f);
+                color: #fff;
+                font-weight: bold;
+                border:none;
+        }
+    }
+
 }
 
 .col1 {
@@ -171,5 +195,9 @@ body{
    and (max-width : 360px) {
   .navbar{
       width: 100%;
+
+  }
+  .navbar-item{
+      text-align: center;
   }
 }

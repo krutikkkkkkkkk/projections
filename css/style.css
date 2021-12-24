@@ -161,7 +161,7 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: auto;
+  height: 100vh;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -180,6 +180,10 @@ body .conatiner-md {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -210,9 +214,35 @@ body .conatiner-md {
 }
 
 .hero {
-  background-color: #121520;
+  background: linear-gradient(292deg, #fff0, #110d17), url(../imgs/banner.jpg) no-repeat;
   height: 100vh;
   width: 100%;
+  background-size: cover;
+}
+
+.hero .hero-title {
+  font-size: 4rem;
+}
+
+.hero p {
+  font-size: 1.8rem;
+}
+
+.hero .register {
+  width: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.hero .register button {
+  width: 22rem;
+  height: 3.5rem;
+  border-radius: .3rem;
+  background: linear-gradient(-292deg, #9838a58f, #9d78d54f);
+  color: #fff;
+  font-weight: bold;
+  border: none;
 }
 
 .col1 {
@@ -232,6 +262,9 @@ body .conatiner-md {
 @media only screen and (max-width: 360px) {
   .navbar {
     width: 100%;
+  }
+  .navbar-item {
+    text-align: center;
   }
 }
 /*# sourceMappingURL=style.css.map */
