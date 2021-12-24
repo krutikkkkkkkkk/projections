@@ -15,32 +15,84 @@
     <script src="js/app.js" defer></script>
 </head>
 <body>
-    <header>
-    <nav>
-        <a href="index.html"><img src="" alt="logo" class="logo"></a>
-<ul>
-   <a href="index.html"><li>Home</li></a>
-   <a href="events.html"> <li>Events</li></a>
-    <li> 
-        <select name="about" id="">
-            <a href="about.html"> <option value="info">About Us</option></a>
-                <a href="gallery.html"> <option value="gallery">Gallery</option></a>
-                    <a href="sponsers.html"><option value="sponsers">Sponsers</option></a>
-    </select> 
-    </li>
-    <li>Contact Us</li>
-</ul>
-    </nav>
-    </header>
-
-     <main>
+<!-- Loading -->
+     <div id="loadingscreen">
+    <div class="slider s1"></div>
+    <div class="slider s2"></div>
+    <h1 class="main-head">Projections 2022</h1>
+    <div class="loading-div">
+        <div class="loading-bar"></div>
+        <h1 class="loading-head"></h1>
+        <p>Kmph</p>
+        <div class="svg-div">
+        </div>
+    </div>
+    </div>
 
 
 
+   <div class="conatiner-md">
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html"> 
+              <img src="imgs/logo-gif.gif" alt="logo"  class="d-inline-block align-text-top logo-gif">
+              Projections</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav navbar-right  ms-auto">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Events</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  About Us
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <li><a class="dropdown-item" href="about.html">Info</a></li>
+                  <li><a class="dropdown-item" href="gallery.html">Gallery</a></li>
+                  <li><a class="dropdown-item" href="sponser.html">Sponsers</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact Us</a>
+              </li>
+            
+            </ul>
+          </div>
+        </div>
+      </nav>
+      </div>
+   
+<section class="hero">
+    <div class="container">
+        <div class="row">
+          <div class="col col1">
+            <h1>Projections 2022</h1>
+          </div>
+          <div class="col">
+            Column
+          </div>
+        </div>
+      </div>
+</section>
 
-     </main>
 
 
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TimelineMax.min.js"
+integrity="sha512-0xrMWUXzEAc+VY7k48pWd5YT6ig03p4KARKxs4Bqxb9atrcn2fV41fWs+YXTKb8lD2sbPAmZMjKENiyzM/Gagw=="
+crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"
+integrity="sha512-DkPsH9LzNzZaZjCszwKrooKwgjArJDiEjA5tTgr3YX4E6TYv93ICS8T41yFHJnnSmGpnf0Mvb5NhScYbwvhn2w=="
+crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+<!-- bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
 </body>
