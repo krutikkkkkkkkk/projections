@@ -13,111 +13,15 @@ html{
     overflow-x: hidden;
 }
 
-$primray-color: rgb(45, 94, 255);
+$primray-color: #2d5eff;
 $herobg: #121520;
 $main-font:"Poppins";
 $background:#0a0a0a;
 $text-clr:#3a3a3a;
 
-.loading-div{
-    height: 100vh;
-    width: 100vw;
-    display: flex;
-    z-index: 99999;
-    justify-content: center;
-    align-items: center;
-    background-color: $background;
-    position: relative;
-    .loading-bar{
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 0;
-        height: 0.3rem;
-        background-color: #fff;
-    }
-    h1{
-        font-size: 5rem;
-        color: $text-clr;
-        opacity: 0.4;
-        font-size: 10rem;
-    }
-    .svg-div{
-        height: 150px;
-        width: 150px;
-        z-index: 99;
-        position: absolute;
-        display: flex;
-        align-items: center;
-        position: absolute;
-        left: 0px;
-        background: none no-repeat center center;
-        animation:carslide 5s linear 1;
-    }
-    p{
-        color: $text-clr;
-        opacity: 0.4;
-        margin-left: 0.4rem;
-        font-weight: bold;
-    }
-    
-}
-.slider{
-    background-color: #fff;
-    height: 100vh;
-    width: 50vw;
-    position: absolute;
-    z-index: 999;
-    transition: 1s linear;
-    &.s1{
-        left: -100%;
-    }
-    &.s2{
-        left: 100%;
-    }
-    &.slide-left{
-        left:0%
-    }
-    &.slide-right{
-        left:50%
-    }
-}
-@keyframes carslide{
-    0%{
-        left: 0vw;
-        background-image: url(../svg/Asset4.svg);
-    }
-    25%{
-        left: 25vw;
-        background-image:url(../svg/Asset3.svg);
-    }
-    50%{
-        left: 50vw;
-        background-image:url(../svg/Asset1.svg);
-    }
-    75%{
-        left: 75vw;
-        background-image:url(../svg/Asset2.svg);
-    }
-    100%{
-        left: 100vw;
-        background-image:url(../svg/Asset2.svg);
-    }
-}
-.main-head{
-    z-index: 9999;
-    position: absolute;
-    top: 50%;    
-    left: 50%;
-    transform: translate(-50%,-50%);
-    -webkit-text-fill-color: white; /* Will override color (regardless of order) */
-    -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: black;
-    font-size: 3rem;
-}
+
 
 body{
-    // overflow-y: hidden;
     display: flex;
     height: 100vh;
     flex-direction: column;
@@ -135,29 +39,24 @@ body{
     }
 }
 
-.navbar {
-    width: 90%;
-    background: rgb(0, 0, 0);
-    padding: 1em;
+.ndhero {
+    background: linear-gradient(
+292deg, #fff0,#110d17),url(../imgs/flipbanner.svg) no-repeat;
+    // height: 720px;
+    height: 100vh;
+    // width: 1280px;
+    width: 100%;
+    background-size: cover;
+    filter: invert(1);
+    background-position-y: revert;
+}
 
-    .navbar-brand{
-        font-weight: bold;
-    }
-}
-.logo-gif{
-    width: auto;
-    margin-top: -15px;
-    height: 60px;
-    
-}
-.active{
-    font-weight: bold!important;
-    color: $primray-color!important;
-}
 .hero {
     background: linear-gradient(
 292deg, #fff0,#110d17),url(../imgs/banner.jpg) no-repeat;
+    // height: 720px;
     height: 100vh;
+    // width: 1280px;
     width: 100%;
     background-size: cover;
     .hero-title{
@@ -183,8 +82,11 @@ body{
 
 }
 
+
 .col1 {
-    height: 80vh;
+    // height: 600px;
+    height: 100vh;
+    padding: .8rem;
     display: flex;
     flex-direction: column;
     justify-content: center;

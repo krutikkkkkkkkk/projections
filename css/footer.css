@@ -1,8 +1,9 @@
 .footer{
     width: 100%;
     height: auto;
-    padding: 2rem 0;
+    padding: 2rem;
     background-color: #000!important;
+    color:#fff;
 }
 .container-foot {
     background-color: #000!important;
@@ -34,8 +35,12 @@ flex-direction: column;
     text-align: center;
 }
 
+.footer-icons > a{
+    margin: .5rem;
+}
+
 @media only screen 
-   and (max-width : 360px) {
+   and (max-width : 380px) {
 
     .footer{
         justify-content: center;
@@ -44,6 +49,9 @@ flex-direction: column;
     iframe{
         width: 250;
         height: 180;
+    }
+    .col{
+        flex: none;
     }
 
 }

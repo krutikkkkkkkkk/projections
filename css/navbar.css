@@ -1,0 +1,33 @@
+.navbar {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  background: black;
+  padding: 1em;
+}
+
+.navbar .navbar-brand {
+  font-weight: bold;
+}
+
+.logo-gif {
+  width: auto;
+  margin-top: -15px;
+  height: 60px;
+}
+
+.active {
+  font-weight: bold !important;
+  color: #2d5eff !important;
+}
+
+@media only screen and (max-width: 360px) {
+  .navbar {
+    width: 100%;
+  }
+  .navbar-item {
+    text-align: center;
+  }
+}
+/*# sourceMappingURL=navbar.css.map */
