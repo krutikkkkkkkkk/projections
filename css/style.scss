@@ -23,7 +23,7 @@ $text-clr:#3a3a3a;
 
 body{
     display: flex;
-    height: 100vh;
+    // height: 100vh;
     flex-direction: column;
     align-items: center;
     color:#fff;
@@ -39,17 +39,7 @@ body{
     }
 }
 
-.ndhero {
-    background: linear-gradient(
-292deg, #fff0,#110d17),url(../imgs/flipbanner.svg) no-repeat;
-    // height: 720px;
-    height: 100vh;
-    // width: 1280px;
-    width: 100%;
-    background-size: cover;
-    filter: invert(1);
-    background-position-y: revert;
-}
+
 
 .hero {
     background: linear-gradient(
@@ -86,11 +76,33 @@ body{
 .col1 {
     // height: 600px;
     height: 100vh;
-    padding: .8rem;
+    padding: 5rem 0.8rem;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     
+}
+
+.ndhero {
+    background: linear-gradient(292deg, #fff0,#110d17),url(../imgs/flipbanner.svg) no-repeat;
+    // height: 720px;
+    height: fit-content;
+    // width: 1280px;
+    width: 100%;
+    background-size: cover;
+    filter: invert(1);
+    background-position-y: revert;
+}
+
+
+.card {
+    padding: 1.5rem;
+    display: block;
+    height: 50%;
+    // width: 25rem;
+    width: 85%;
+    margin: .5rem;
+    background: #00000085;
+    border-radius: 0.75rem;
 }
 
 @media only screen 
@@ -101,5 +113,10 @@ body{
   }
   .navbar-item{
       text-align: center;
+  }
+  .hero{
+      .hero-title{
+          font-size: 3.1rem;
+      }
   }
 }

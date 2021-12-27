@@ -17,7 +17,6 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: 100vh;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -46,16 +45,6 @@ body .conatiner-md {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-}
-
-.ndhero {
-  background: linear-gradient(292deg, #fff0, #110d17), url(../imgs/flipbanner.svg) no-repeat;
-  height: 100vh;
-  width: 100%;
-  background-size: cover;
-  -webkit-filter: invert(1);
-          filter: invert(1);
-  background-position-y: revert;
 }
 
 .hero {
@@ -92,7 +81,7 @@ body .conatiner-md {
 
 .col1 {
   height: 100vh;
-  padding: .8rem;
+  padding: 5rem 0.8rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -100,9 +89,28 @@ body .conatiner-md {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+}
+
+.ndhero {
+  background: linear-gradient(292deg, #fff0, #110d17), url(../imgs/flipbanner.svg) no-repeat;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  width: 100%;
+  background-size: cover;
+  -webkit-filter: invert(1);
+          filter: invert(1);
+  background-position-y: revert;
+}
+
+.card {
+  padding: 1.5rem;
+  display: block;
+  height: 50%;
+  width: 85%;
+  margin: .5rem;
+  background: #00000085;
+  border-radius: 0.75rem;
 }
 
 @media only screen and (max-width: 360px) {
@@ -111,6 +119,9 @@ body .conatiner-md {
   }
   .navbar-item {
     text-align: center;
+  }
+  .hero .hero-title {
+    font-size: 3.1rem;
   }
 }
 /*# sourceMappingURL=style.css.map */

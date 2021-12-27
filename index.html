@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="css/footer.css">
  
     <!--Javascript-->
-
+    <!-- <script src='https://kit.fontawesome.com/a076d05399.js' /></script> -->
     <script src="js/main.js" defer></script>
     <script src="js/app.js" defer></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TimelineMax.min.js"
@@ -25,6 +25,24 @@ crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </head>
 <body>
 <!-- Loading -->
+<!-- <style>
+  .loadingscreen{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(imgs/logo-gif.gif) ;
+    position: absolute;
+    z-index: 11111;
+    background-repeat: no-repeat;
+  
+  }
+</style> -->
+<!-- 
+<div class="loadingscreen" id="loadingscreen">
+
+</div> -->
 
 
 
@@ -34,7 +52,8 @@ crossorigin="anonymous" referrerpolicy="no-referrer"></script>
         <div class="container-fluid">
           <a class="navbar-brand" href="index.html"> 
               <img id="logo" src="imgs/logo-gif.gif" alt="logo"  class="d-inline-block align-text-top logo-gif">
-              Projections</a>
+              <img src="imgs/logo.png" alt="logo-text" class="logotext">
+            </a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -80,7 +99,7 @@ crossorigin="anonymous" referrerpolicy="no-referrer"></script>
             </div>
           </div>
           <div class="col">
-            <!-- <img id="hero-img" src="svg/hero-img.svg" alt=""> -->
+            <!-- <model-viewer src="3D/scene.gltf" style="height: 100%; width: 100%;" alt="VR Headset" auto-rotate camera-controls ar ios-src="assets/HTC_Vive_Headset.gltf"></model-viewer> -->
           </div>
         </div>
       </div>
@@ -90,14 +109,23 @@ crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <section class="ndhero">
     <div class="container" >
         <div class="row">
-          <div class="col col1">
-            <h1 class="hero-title">About Us</h1>
-            <p>Gujarat's Largest Tech Fest</p>
+          <div class="col col1" style="justify-content: space-between;">
+            <h1  class="hero-title">History Of Projections</h1>
+            
+            <div class="card">
+              <h1>2018</h1>
+            </div>
 
            
           </div>
-          <div class="col">
+          <div class="col col1"  style="justify-content: space-between; align-items: self-end;">
+            <div class="card">
+              <h1>2018</h1>
+            </div>
             <!-- <img id="hero-img" src="svg/hero-img.svg" alt=""> -->
+            <div class="card">
+              <h1>2018</h1>
+            </div>
           </div>
         </div>
       </div>
@@ -168,9 +196,10 @@ crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
 
 
-
+<!-- <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script> -->
+<!-- <script nomodule src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"></script> -->
 <!-- bootstrap -->
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script> 
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script> -->
 </body>
 </html>
