@@ -8,6 +8,7 @@
     text-decoration: none;
 }
 
+
 html{
     scroll-behavior: smooth;
     overflow-x: hidden;
@@ -26,12 +27,13 @@ body{
     // height: 100vh;
     flex-direction: column;
     align-items: center;
-    color:#fff;
+    color:#000;
     margin: 0;
+    background-color: rgb(255, 255, 255);
     font-family: 'Poppins' , sans-serif;
     .conatiner-md{
         width: 100%;
-        background-color: #000;
+        background-color: rgb(255, 255, 255);
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -43,14 +45,14 @@ body{
 
 .hero {
     background: linear-gradient(
-292deg, #fff0,#110d17),url(../imgs/banner.jpg) no-repeat;
-    // height: 720px;
-    height: 100vh;
-    // width: 1280px;
-    width: 100%;
+292deg, #fff0,#110d17),url(../imgs/25550.jpg) no-repeat;
+    height: 500px;
+    width: 1280px;
+    padding: 0;
+    color: #fff;
     background-size: cover;
     .hero-title{
-        font-size: 4rem;
+        font-size: 3rem;
     }
     p{
         font-size: 1.8rem;
@@ -74,23 +76,46 @@ body{
 
 
 .col1 {
-    // height: 600px;
-    height: 100vh;
+    height: auto;
+    width: 200%;
     padding: 5rem 0.8rem;
     display: flex;
+    margin-top: 2rem;
     flex-direction: column;
     
 }
 
 .ndhero {
-    background: linear-gradient(292deg, #fff0,#110d17),url(../imgs/flipbanner.svg) no-repeat;
-    // height: 720px;
-    height: fit-content;
-    // width: 1280px;
-    width: 100%;
-    background-size: cover;
-    filter: invert(1);
-    background-position-y: revert;
+    height: auto;
+    width: 1280px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 3.5rem;
+
+    .about-head{
+        font-size: 5rem;
+    }
+    .about-para{
+        line-height: 2;
+    }
+    .stats-div{
+        p{
+            font-size: 1.2rem;
+        }
+        span{
+            font-size: 5rem;
+        }
+    }
+    // background: linear-gradient(292deg, #fff0,#110d17),url(../imgs/flipbanner.svg) no-repeat;
+    // // height: 720px;
+    // height: fit-content;
+    // // width: 1280px;
+    // width: 100%;
+    // background-size: cover;
+    // filter: invert(1);
+    // background-position-y: revert;
 }
 
 
@@ -104,6 +129,99 @@ body{
     background: #00000085;
     border-radius: 0.75rem;
 }
+
+@media only screen and (min-width: 1280px) {
+    .container {
+        width: 1280px;
+        margin: 0 auto;
+    }
+
+    section {
+        padding: 10em 4em;
+    }
+
+    .hero .container {
+        display: flex;
+        justify-content: space-between;
+        text-align: left;
+
+        .left-col {
+            margin: 3em 3em 0 5em;
+
+            h1 {
+                font-size: 3em;
+                width: 90%;
+            }
+        }
+    }
+
+    .hero-img {
+        width: 30%;
+        margin-right: 8em;
+    }
+
+    .hero-cta {
+        display: flex;
+    }
+    .primary-cta {
+        margin-right: 1em;
+    }
+
+    ul.features-list {
+        display: block;
+        margin-left: 5em;
+
+        li {
+            font-size: 1.4em;
+
+            &:before {
+                width: 30px;
+                height: 30px;
+            }
+        }
+    }
+
+    .features-section {
+        position: relative;
+    }
+
+    .features-section img {
+        display: block;
+        position: absolute;
+        right: 0;
+        width: 350px;
+        bottom: -2em;
+    }
+
+    .testimonials-section ul {
+        display: flex;
+        
+        li {
+            margin: 0 1em;
+        }
+    }
+
+    .contact-section {
+        position: relative;
+
+        .container {
+            display: flex;
+        }
+    }
+
+    .contact-right {
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 45%;
+        height: 100%;
+
+        iframe {
+            height: 100%;
+        }
+    }
+}
+
 
 @media only screen 
    and (max-width : 360px) {
